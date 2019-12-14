@@ -1,5 +1,5 @@
 
-cd ~/GitHub/LinuxConfig/Vim
+cd ~/GitHub/LinuxConfig
 git pull
 rsync -apzt --delete ~/.vimrc ~/GitHub/LinuxConfig/Vim
 rsync -apzt --delete ~/.vim ~/GitHub/LinuxConfig/Vim
