@@ -8,6 +8,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
+Plugin 'https://github.com/dense-analysis/ale.git'
 Plugin 'https://github.com/Valloric/YouCompleteMe'
 Plugin 'Tagbar'
 call vundle#end()
@@ -16,7 +17,8 @@ set splitbelow
 let g:SimpylFold_docstring_preview=1
 set splitright
 
-
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
@@ -41,7 +43,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-
+set ts=4
 set cino=g0,:0
 
 let g:tagbar_width=35
