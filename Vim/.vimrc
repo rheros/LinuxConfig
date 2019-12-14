@@ -7,12 +7,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
 Plugin 'https://github.com/Valloric/YouCompleteMe'
+Plugin 'Tagbar'
 call vundle#end()
 filetype plugin indent on
 set splitbelow
 let g:SimpylFold_docstring_preview=1
 set splitright
+
+
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
