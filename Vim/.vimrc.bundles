@@ -1,0 +1,42 @@
+if &compatible
+    set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+"let VUndle manage VUndle
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'nosami/Omnisharp'
+"
+Bundle 'majutsushi/tagbar'
+Bundle 'vim-scripts/ctags.vim'
+
+Bundle 'scrooloose/syntastic'
+
+Bundle 'kien/ctrlp.vim'
+
+Bundle 'scrooloose/nerdtree'
+
+Bundle 'Lokaltog/vim-powerline'
+
+Bundle 'altercation/vim-colors-solarized'
+
+Bundle 'davidhalter/jedi-vim'
+
+Bundle 'klen/python-mode'
+
+Bundle 'kien/rainbow_parentheses.vim'
+
+Bundle 'nathanaelkane/vim-indent-guides'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+    source ~/.vimrc.bundles.local
+endif
+
+filetype on
+
+
+
