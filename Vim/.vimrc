@@ -30,3 +30,22 @@ syntax enable
 set fdm=indent
 set rtp+=~/.vim/bundle/vundle
 
+"Debug Python Env
+nnoremap <F5>:call CompileRunGCC()<cr>
+func! CompileRunGcc()
+        exec "w"
+        if &filetype=='python'
+                if search("@profile")
+                        exec "AsyncRun kernprof -l -v %"
+                        exec "copen"
+                        exec "wincmd p"
+                elseif search("set_trace()")
+                        exec "!python3 %"
+                else
+                        exec "AsyncRun -raw python3 %"
+                        exec "copen"
+                        exec "wincmd p"
+                endif
+        endif
+endfunc
+"End Debug Python env
