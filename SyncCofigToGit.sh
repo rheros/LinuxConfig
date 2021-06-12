@@ -1,8 +1,7 @@
-rsync -apzt --delete ~/.vimrc ~/GitHub/LinuxConfig/Vim
-rsync -apzt --delete ~/.vim ~/GitHub/LinuxConfig/Vim
-rsync -apzt ~/SyncCofigToGit.sh ~/GitHub/LinuxConfig
+rsync -apzt --delete ~/.vimrc ~/LinuxConfig/Vim
+rsync -apzt --delete ~/.vim ~/LinuxConfig/Vim
 
-cd ~/GitHub/LinuxConfig/Vim
+cd ~/LinuxConfig/Vim
 git pull
 git add .
 git commit -m "anychange"
