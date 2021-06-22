@@ -1,0 +1,11 @@
+#Default github user
+Host github.com
+Hostname github.com
+IdentityFile ~/.ssh/id_rsa
+User git
+
+# rheros github
+Host github_rheros.com
+HostName github.com
+IdentityFile ~/.ssh/id_rsa_rheros
+User git
