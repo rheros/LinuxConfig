@@ -1,3 +1,4 @@
+#cpoy this file to ~/.ssh/config 
 #Default github user
 Host github.com
 Hostname github.com
