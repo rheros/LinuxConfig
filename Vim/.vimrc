@@ -6,6 +6,7 @@ if filereadable(expand("~/.vimrc.bundles"))
     source ~/.vimrc.bundles
 endif
 
+"py dev env
 nnoremap <F5> :call CompileRunGcc()<CR>
 func!CompileRunGcc()
         exec "w"
@@ -23,6 +24,8 @@ func!CompileRunGcc()
                 endif
         endif
 endfunc
+"end of py dev env
+
 set nu
 set encoding=utf8
 set paste 
