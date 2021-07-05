@@ -25,6 +25,8 @@ func!CompileRunGcc()
         endif
 endfunc
 "end of py dev env
+"open nerdTree
+nnoremap <F2> :NERDTreeToggle<CR>
 
 set nu
 set encoding=utf8
@@ -50,3 +52,5 @@ syntax enable
 set fdm=indent
 set rtp+=~/.vim/bundle/vundle
 "For Python Debug
+
+set mouse=a
